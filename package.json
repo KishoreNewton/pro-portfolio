@@ -4,14 +4,22 @@
   "description": "Portfolio project",
   "main": "js/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [
     "portfolio"
   ],
   "author": "Kishore Newton",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^5.0.1",
+    "html-loader": "^1.3.2",
+    "html-minimizer-webpack-plugin": "^2.0.0",
+    "html-webpack-plugin": "5.0.0-alpha.17",
+    "mini-css-extract-plugin": "^1.3.3",
+    "style-loader": "^2.0.0",
     "webpack": "^5.10.3",
     "webpack-cli": "^4.2.0"
   }
