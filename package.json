@@ -1,0 +1,18 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio project",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Kishore Newton",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0"
+  }
+}

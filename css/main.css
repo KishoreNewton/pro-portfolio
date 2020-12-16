@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap');
+
+:root {
+  --body-font: "Mulish", sans-serif;
+  --title-font: "Poppins", sans-serif;
+  --type-font: "Cormorant", serif;
+  --primary-bg: #fff;
+  --secondary-bg: #f7f7f7;
+  --primary-text-color: #212529;
+  --secondary-text-color: #6c757d;
+  --special-color: #e24727;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
