@@ -1,0 +1,66 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+      90deg,
+      #d36363,
+      #db973f,
+      #f0ca4c,
+      #91dd5e,
+      #5dd6bc,
+      #6796dd,
+      #9264e9,
+      #ff70e7,
+      #ff6a83
+    );
+    background-size: 180% 180%;
+    -webkit-animation: rainbow 8s ease infinite;
+    -z-animation: rainbow 8s ease infinite;
+    -o-animation: rainbow 8s ease infinite;
+    animation: rainbow 8s ease infinite;
+  }
+  
+  @-webkit-keyframes rainbow {
+    0% {
+      background-position: 0% 82%;
+    }
+    50% {
+      background-position: 100% 19%;
+    }
+    100% {
+      background-position: 0% 82%;
+    }
+  }
+  @-moz-keyframes rainbow {
+    0% {
+      background-position: 0% 82%;
+    }
+    50% {
+      background-position: 100% 19%;
+    }
+    100% {
+      background-position: 0% 82%;
+    }
+  }
+  @-o-keyframes rainbow {
+    0% {
+      background-position: 0% 82%;
+    }
+    50% {
+      background-position: 100% 19%;
+    }
+    100% {
+      background-position: 0% 82%;
+    }
+  }
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 82%;
+    }
+    50% {
+      background-position: 100% 19%;
+    }
+    100% {
+      background-position: 0% 82%;
+    }
+  }
