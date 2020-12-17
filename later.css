@@ -3,15 +3,15 @@ body {
     width: 100vw;
     background: linear-gradient(
       90deg,
-      #d36363,
-      #db973f,
-      #f0ca4c,
-      #91dd5e,
-      #5dd6bc,
-      #6796dd,
-      #9264e9,
-      #ff70e7,
-      #ff6a83
+      #000000,
+      #181818,
+      #292929,
+      #383838,
+      #3f3f3f,
+      #616161,
+      #727272,
+      #a5a5a5,
+      #bdbdbd
     );
     background-size: 180% 180%;
     -webkit-animation: rainbow 8s ease infinite;

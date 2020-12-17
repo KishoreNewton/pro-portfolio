@@ -11,18 +11,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(
-    90deg,
-    #ddd6f3,
-    #ececec,
-    #c7c7c7,
-    #9b9b9b,
-    #ffe7e7,
-    #ffe7e7,
-    #fcd4d4,
-    #eeb3b0,
-    #faaca8
-  );
+  background: linear-gradient(90deg, #d8d8d8, #b4b4b4, #c7c7c7, #9b9b9b, #7c7c7c, #c5c5c5, #797979, #b4b4b4, #9b9b9b);
   background-size: 180% 180%;
   -webkit-animation: rainbow 16s ease infinite;
   -z-animation: rainbow 16s ease infinite;
@@ -182,7 +171,8 @@ body {
 }
 
 .card-list::-webkit-scrollbar-track {
-  background: linear-gradient(90deg, #201c29, #201c20 1px, #17141d 0, #17141d);
+  background: linear-gradient(90deg, #ddd6f3, #ececec, #c7c7c7, #9b9b9b, #ffe7e7, #ffe7e7, #fcd4d4, #eeb3b0, #faaca8);
+  /* background: linear-gradient(90deg, #201c29, #201c20 1px, #17141d 0, #17141d); */
 }
 
 .card {

@@ -1,17 +1,31 @@
 import '../css/main.css';
 
+const data = [
+  {
+    id: '1',
+    title: '',
+    description: '',
+    date: '',
+    name: 'Kishore Newton',
+    github: '',
+    website: '',
+    download: '',
+    keywords: ''
+  }
+];
+
 function changeStyle() {
   document.body.style.background = `linear-gradient(
     90deg,
-    #ddd6f3,
-    #fdf5f5,
-    #fff3f3,
-    #ffefef,
-    #ffe7e7,
-    #ffe7e7,
-    #fcd4d4,
-    #eeb3b0,
-    #faaca8
+    #d8d8d8,
+    #b4b4b4,
+    #c7c7c7, 
+    #9b9b9b, 
+    #7c7c7c, 
+    #c5c5c5, 
+    #797979, 
+    #b4b4b4, 
+    #9b9b9b
   )`;
   document.body.style.animation = `rainbow 8s ease infinite`;
   document.body.style.backgroundSize = `180% 180%`;
@@ -56,5 +70,29 @@ document.addEventListener('keydown', event => {
   if (event.key === 'Escape') {
     document.getElementById('search').blur();
     changeStyle();
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.style.background = ``;
+      card.style.animation = ``;
+    });
   }
+});
+
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('mouseenter', event => {
+    if (document.getElementById('search') === document.activeElement) {
+      return;
+    } else {
+      document.body.style.background = `#17141D`;
+      card.style.background = '#17141D';
+    }
+  });
+  card.addEventListener('mouseleave', event => {
+    if (document.getElementById('search') === document.activeElement) {
+      return;
+    } else {
+      changeStyle();
+      card.style.background = `#d0d0d0`;
+    }
+  });
 });
