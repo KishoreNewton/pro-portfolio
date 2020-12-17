@@ -232,6 +232,11 @@ body {
   pointer-events: none;
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
 .github {
   color: #4e94c2;
   background-color: #7070e6;
