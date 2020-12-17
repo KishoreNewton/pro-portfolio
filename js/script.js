@@ -33,8 +33,12 @@ document.addEventListener('click', event => {
     )`;
     document.body.style.animation = `rainbow 8s ease infinite`;
     document.body.style.backgroundSize = `180% 180%`;
+    if (window.innerWidth > 1300) {
+      document.querySelector('.form__label').innerText = 'Search For Project and resume';
+    }
   } else {
     changeStyle();
+    document.querySelector('.form__label').innerText = 'Search Here...';
   }
 });
 
