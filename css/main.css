@@ -232,6 +232,21 @@ body {
   pointer-events: none;
 }
 
+.github {
+  color: #4e94c2;
+  background-color: #7070e6;
+}
+
+.download {
+  color: #4e94c2;
+  background-color: #7070e6;
+}
+
+.website {
+  color: #4e94c2;
+  background-color: #7070e6;
+}
+
 .author-name-prefix {
   font-style: normal;
   font-weight: 700;

@@ -1,6 +1,6 @@
 import '../css/main.css';
 
-const data = [
+const posts = [
   {
     id: '1',
     title: '',
@@ -13,6 +13,39 @@ const data = [
     keywords: ''
   }
 ];
+
+posts.map(post => {
+  loadData(post);
+});
+
+function loadData(post) {
+  const { title, description, name, github, website, download } = post;
+
+  return `
+    <article class="card">
+        <header class="card-header">
+          <p>${description}</p>
+          <h2>${title}</h2>
+        </header>
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="avatar.jpeg" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+          <div class="author-name">
+            <div class="author-name-prefix">Author</div>
+            ${name}
+          </div>
+          <div class="web-links">
+            <a src="${github}"></a>
+            <a src="${website}"></a>
+            <a src="${download}></a>
+          </div>
+        </div>
+      </article>`;
+}
 
 function changeStyle() {
   document.body.style.background = `linear-gradient(
