@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 :root {
   --body-font: 'Mulish', sans-serif;
   --title-font: 'Poppins', sans-serif;
-  --type-font: 'Cormorant', serif;
+  --type-font: 'Varela Round', sans-serif;
   --primary-bg: #fff;
   --secondary-bg: #f7f7f7;
   --primary-text-color: #212529;
@@ -22,21 +24,21 @@ body {
   width: 100vw;
   background: linear-gradient(
     90deg,
-    #020202,
-    #1f1f1f,
-    #525252,
-    #7a7a7a,
-    #aaaaaa,
-    #afafaf,
-    #c7c7c7,
-    #d8d8d8,
-    #ffffff
+    #ddd6f3,
+    #fdf5f5,
+    #fff3f3,
+    #ffefef,
+    #ffe7e7,
+    #ffe7e7,
+    #fcd4d4,
+    #eeb3b0,
+    #faaca8
   );
   background-size: 180% 180%;
-  -webkit-animation: rainbow 8s ease infinite;
-  -z-animation: rainbow 8s ease infinite;
-  -o-animation: rainbow 8s ease infinite;
-  animation: rainbow 8s ease infinite;
+  -webkit-animation: rainbow 16s ease infinite;
+  -z-animation: rainbow 16s ease infinite;
+  -o-animation: rainbow 16s ease infinite;
+  animation: rainbow 16s ease infinite;
 }
 
 @-webkit-keyframes rainbow {
@@ -94,7 +96,7 @@ header {
 }
 
 #search {
-  font-family: var(--type-font);
+  font-family: 'Source Code Pro', monospace;
 }
 
 .form__group {
@@ -105,13 +107,14 @@ header {
 }
 
 .form__field {
-  font-family: inherit;
+  font-family: 'Source Code Pro', monospace;
   width: 100%;
   border: 0;
   border-bottom: 2px solid #9b9b9b;
+  border-right: 2px solid #9b9b9b;
   outline: 0;
   font-size: 1.3rem;
-  color: #fff;
+  color: #000;
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
@@ -120,25 +123,38 @@ header {
   color: transparent;
 }
 .form__field:placeholder-shown ~ .form__label {
-  font-size: 1.3rem;
+  font-family: var(--type-font);
+  font-size: 1.1rem;
   cursor: text;
   top: 20px;
+  font-weight: 200;
+  background: linear-gradient(90deg, #acacac, #272727);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .form__label {
+  font-family: var(--type-font);
   position: absolute;
   top: 0;
   display: block;
   transition: 0.2s;
   font-size: 1rem;
-  color: #9b9b9b;
+  color: #dbdbdb;
+  background: linear-gradient(90deg, #e0e0e0, #e0e0e0);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .form__field:focus {
   padding-bottom: 6px;
   font-weight: 700;
   border-width: 3px;
-  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image: linear-gradient(to right, #000000, #ffffff);
   border-image-slice: 1;
 }
 .form__field:focus ~ .form__label {
@@ -147,7 +163,7 @@ header {
   display: block;
   transition: 0.2s;
   font-size: 1rem;
-  color: #11998e;
+  color: #000000;
   font-weight: 700;
 }
 
