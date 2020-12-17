@@ -31,6 +31,11 @@ document.addEventListener('click', event => {
       #eeb1e5,
       #ff6a83
     )`;
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.style.background = `linear-gradient(90deg, #275694bd, #02af36cc)`;
+      card.style.animation = `colorRotate 6s linear 0s infinite`;
+    });
     document.body.style.animation = `rainbow 8s ease infinite`;
     document.body.style.backgroundSize = `180% 180%`;
     if (window.innerWidth > 1300) {
@@ -38,6 +43,11 @@ document.addEventListener('click', event => {
     }
   } else {
     changeStyle();
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.style.background = ``;
+      card.style.animation = ``;
+    });
     document.querySelector('.form__label').innerText = 'Search Here...';
   }
 });
