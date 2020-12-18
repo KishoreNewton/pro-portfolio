@@ -58,7 +58,6 @@ function eventListner() {
       if (document.getElementById('search') === document.activeElement) {
         return;
       } else {
-        console.log('working');
         document.body.style.background = `#17141D`;
         card.style.background = '#17141D';
       }
