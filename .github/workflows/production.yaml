@@ -29,6 +29,7 @@ jobs:
           folder: dist
           bucket: ${{ secrets.S3_BUCKET }}
           dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+          invalidation: /
           delete-removed: true
           no-cache: true
           private: true
