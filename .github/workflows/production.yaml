@@ -1,0 +1,28 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+
+
+    steps:
+    - uses: actions/checkout@v2.3.2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '12'
+    - name: Install application
+      run: |
+        npm install
+    - name: Production Build
+      run: |
+        npm run build
+    - name: Deploy to s3
+      uses: reggionick/s3-deploy@v3
+      with:
+        folder: build
+        bucket: ${{ secrets.S3_BUCKET }}
