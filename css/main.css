@@ -175,7 +175,11 @@ body {
   /* background: linear-gradient(90deg, #201c29, #201c20 1px, #17141d 0, #17141d); */
 }
 
-.card {
+/* .card-list::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #eef2f3, #ffd9d1, #ffb3a4, #ee6350, #cc3729, #ba291c, #a81810, #970002, #ff0004);
+} */
+
+.page {
   margin-top: 50px;
   display: flex;
   position: relative;
@@ -189,15 +193,16 @@ body {
   transition: 0.2s;
 }
 
-.card:hover {
+.page:hover {
   transform: translateY(-1rem);
+  cursor: pointer;
 }
 
-.card:hover ~ .card {
+.page:hover ~ .page {
   transform: translateX(130px);
 }
 
-.card:not(:first-child) {
+.page:not(:first-child) {
   margin-left: -130px;
 }
 

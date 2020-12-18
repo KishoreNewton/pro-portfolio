@@ -1,66 +1,60 @@
 body {
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(
-      90deg,
-      #000000,
-      #181818,
-      #292929,
-      #383838,
-      #3f3f3f,
-      #616161,
-      #727272,
-      #a5a5a5,
-      #bdbdbd
-    );
-    background-size: 180% 180%;
-    -webkit-animation: rainbow 8s ease infinite;
-    -z-animation: rainbow 8s ease infinite;
-    -o-animation: rainbow 8s ease infinite;
-    animation: rainbow 8s ease infinite;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(90deg, #000000, #181818, #292929, #383838, #3f3f3f, #616161, #727272, #a5a5a5, #bdbdbd);
+  background-size: 180% 180%;
+  -webkit-animation: rainbow 8s ease infinite;
+  -z-animation: rainbow 8s ease infinite;
+  -o-animation: rainbow 8s ease infinite;
+  animation: rainbow 8s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
   }
-  
-  @-webkit-keyframes rainbow {
-    0% {
-      background-position: 0% 82%;
-    }
-    50% {
-      background-position: 100% 19%;
-    }
-    100% {
-      background-position: 0% 82%;
-    }
+  50% {
+    background-position: 100% 19%;
   }
-  @-moz-keyframes rainbow {
-    0% {
-      background-position: 0% 82%;
-    }
-    50% {
-      background-position: 100% 19%;
-    }
-    100% {
-      background-position: 0% 82%;
-    }
+  100% {
+    background-position: 0% 82%;
   }
-  @-o-keyframes rainbow {
-    0% {
-      background-position: 0% 82%;
-    }
-    50% {
-      background-position: 100% 19%;
-    }
-    100% {
-      background-position: 0% 82%;
-    }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
   }
-  @keyframes rainbow {
-    0% {
-      background-position: 0% 82%;
-    }
-    50% {
-      background-position: 100% 19%;
-    }
-    100% {
-      background-position: 0% 82%;
-    }
+  50% {
+    background-position: 100% 19%;
   }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+body {
+  /* background: linear-gradient(90deg, #eef2f3, #ffd9d1, #ffb3a4, #ee6350, #cc3729, #ba291c, #a81810, #970002, #ff0004);*/
+  background: transparent; 
+}
