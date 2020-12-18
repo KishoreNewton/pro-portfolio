@@ -100,8 +100,8 @@ document.addEventListener('click', event => {
     if (window.innerWidth > 1300) {
       document.querySelector('.form__label').innerText = 'Search For Project and resume';
     }
-  } else if (event.target.className.includes('card')) {
-    const card = event.target.className === 'card' ? event.target : event.target.closest('.card');
+  } else if (event.target.className.includes('card') || event.target.closest('article').className.includes('card')) {
+    const card = event.target.className === 'card' ? event.target : event.target.closest('article');
     card.style.background = '#aea6fe';
     document.body.style.background = '#ffd17e';
     card.querySelector('.half-circle').style.stroke = '#ffd17e';
