@@ -100,7 +100,7 @@ document.addEventListener('click', event => {
     if (window.innerWidth > 1300) {
       document.querySelector('.form__label').innerText = 'Search For Project and resume';
     }
-  } else if (event.target.className.includes('card') || event.target.closest('article').className.includes('card')) {
+  } else if (event.target.className.includes('card') || (event.target.closest('.card') && event.target.closest('.card').className.includes('card'))) {
     const card = event.target.className === 'card' ? event.target : event.target.closest('article');
     card.style.background = '#aea6fe';
     document.body.style.background = '#ffd17e';
