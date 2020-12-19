@@ -2,7 +2,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox
 workbox.routing.registerRoute(({ request }) => request.destination === 'image', new workbox.strategies.NetworkFirst());
 
 var CACHE_NAME = 'my-site-cache-v1';
-var urlsToCache = ['/', '/main.bundle.js','/avatar.jpeg', '/favicon.png', '/index.html', '/favicon.ico'];
+var urlsToCache = ['/main.bundle.js','/avatar.jpeg', '/favicon.png', '/index.html', '/favicon.ico'];
 
 self.addEventListener('install', function (event) {
   // Perform install steps
