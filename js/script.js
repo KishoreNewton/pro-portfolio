@@ -86,7 +86,7 @@ function loadData(post) {
     <h2>${title}</h2>
   </header>
   <div class="card-author">
-    <a class="author-avatar" href="#">
+    <a class="author-avatar" href="#" rel="noreferrer">
       <img src="avatar.jpeg" alt="Kishore Newton" />
     </a>
     <svg class="half-circle" viewBox="0 0 106 57">
@@ -98,21 +98,21 @@ function loadData(post) {
     </div>
   </div>
   <div class="links">
-    <a href="${github}" target='_blank'>
+    <a href="${github}" target='_blank' rel="noreferrer">
       <svg class="github" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
         height="20" viewBox="0 0 100 100">
         <image alt="github" width="100" height="98"
           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABiCAYAAACmu3ZJAAADIklEQVR4nO2dC47DIAxEk2rvf+WstFJaNs0Hg8cMMO8AKfaLgRBC123bFmIQjVuZA/4haENKxN1x9hs0khiEMJRo2oamcloKYe0r93Y1EdNCCPWgldBETKSQXkQcCRUTIaRXEUdCxCCFjCLiCFTMC3HRgWWkQGL0rpAZRKS4V4tnhcwmI8Utdi8hM8vYccmBhxDJ+FCdi1ohkvFNVU5qhEjGNcW5KRUiGc8U5ahEiGTkY86VVYhk2DHlzCJEMsrJzl2uEMmoJyuHqLUsUUjOWlZtdaTrPL1WmlcM29O615MQ7wT2JAf13uNWCrrLugtqJd2S89QuaJvvhETdwSxiIttxmVumfVl7Mq4aW5ss1HVduRLSsn9HJYitezwdSzTtJeNMiB4C4/jKtSqEjKMQVUc8/3KuCiEjFaLqaMc79+gKGVEyNCZ1WWTsQlDWqT8fKwS56AitkBFl7MBiQwkZWcZOV7vfRSEIITNUx457rC89f1Cxqcsiw1vITN3VjmvMqhAyJIQMCSFDQsiQEDIkhAwJIUNCyJAQMiSEDAkhQ0LI8BYy41K+a8yqEDIkhAyEkJm6LfdYVSFkSAgX6wv02lWHYBaCrJCRpcBiU5dFhj5HsBPyOQJy+85IUpCx/DmIOjig6V9AOBB2U0WPIT1WS2ibUyGR53z0ICayne/cM/zDDuORF804ClkNDfI81OvsmpHQnO1SUyHp4SlPJ/lYrnmGlyj6rvJsULcEfwyQ9VAyViCnAfUySHfBlZDau9yzSlivVctpW5B/6OIRPCKB1F3qnZCShiOkjEizU0mFkSchLasEWV0tK/f2t3MqxGssUPeVkQPU0snV6c13T/fTC1sMQixLKrnMJiArXsugbk2gHhY/ZOfOOsuSFDumnJVMe0ukzCrG3C2XPoeUTodz5IwisGiMrJll1Qz0o1dM8YSl9kldU9VvqnLisXQiKR+qc+G1liUpTjnwXFycWYpb7N5LJ17v1nsBcuYiAh0TWwhyX9ao1QK92SI2yo0iJqTqI3cu9iomtPttsZW0FzFNxsGW79Tv3iJGJOPut9tMSpZl+QU4AHr0YhYW7AAAAABJRU5ErkJggg==" />
       </svg>
     </a>
-    <a href="${download}" download target='_blank'>
+    <a href="${download}" download target='_blank' rel="noreferrer">
       <svg class="download" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
         height="20" viewBox="0 0 100 100">
         <image alt="download" width="100" height="100"
           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAABdklEQVR4nO3cW27CQBAAQRPl/ld2pHwgRXnBmjVtXHUAhNLMhgHjy7qu68KjXUYf702KKYZf5ILMMxRFkLnujiLIfHdFEWQfN0cRZD83RRFkX/9GEWR/f0Z5n/R0hhejgxndN9bf/kYm5Hl+jCnIc32LMuvIOoKR42bGUfzl+DIhDdcXhyAdn1EEaVkFiREkRpAYQWIEiREkRpAYQWIEiREkRpAYQWIEiREkRpAYQWIEiREk5sxXnSQv5jMhMYLEzDqy/JB0kAmJESRGkBhBYgSJESRGkBhBYgSJESRGkBhBYgSJESRGkBhBYgSJGf3G8Cx3+9nKPRePTpAYQWIEiREkRpCYGRfKne0iuYeuACYkRpAYQWIEiZnxT93nXBuYkBhBYuwh29lDXpkgMYLECBJjD4kxITGCxAgSYzHczmL4ygSJESRGkBiLYYwJiREkRpAYQWIEiREkZvRtr7uOTmJCYgSJESRGkBhBYgSJESRGkJJlWT4Ak4Mb0qa40cEAAAAASUVORK5CYII=" />
       </svg>
     </a>
-    <a href="${website}" target='_blank'>
+    <a href="${website}" target='_blank' rel="noreferrer">
       <svg class="website" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
         height="20" viewBox="0 0 100 100">
         <image alt="website" width="100" height="100"
