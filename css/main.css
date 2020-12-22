@@ -168,12 +168,7 @@ body {
 
 .card-list::-webkit-scrollbar-track {
   background: linear-gradient(90deg, #ddd6f3, #ececec, #c7c7c7, #9b9b9b, #ffe7e7, #ffe7e7, #fcd4d4, #eeb3b0, #faaca8);
-  /* background: linear-gradient(90deg, #201c29, #201c20 1px, #17141d 0, #17141d); */
 }
-
-/* .card-list::-webkit-scrollbar-track {
-  background: linear-gradient(90deg, #eef2f3, #ffd9d1, #ffb3a4, #ee6350, #cc3729, #ba291c, #a81810, #970002, #ff0004);
-} */
 
 .page {
   margin-top: 50px;
