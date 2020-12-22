@@ -36,6 +36,21 @@ const posts = [
   }
 ];
 
+document.body.innerHTML = `
+  <header class="headerInput" id="loaded">
+    <div class="form__group field">
+      <input type="input" class="form__field" placeholder="Name" name="name" id="search" required />
+      <label for="search" class="form__label">Search Here ...</label>
+    </div>
+  </header>
+  <section id="appedHtmlHere" style="padding: 3rem;" class="card-list">
+
+  </section>
+`;
+if(document.getElementById('loaded').id === 'loaded') {
+  loadPosts(posts);
+}
+
 function loadPosts(posts) {
   let style = document.createElement('style');
   style.innerHTML = `.card-list::-webkit-scrollbar-track{ background: linear-gradient(90deg, #ddd6f3, #ececec, #c7c7c7, #9b9b9b, #ffe7e7, #ffe7e7, #fcd4d4, #eeb3b0, #faaca8); }`;
@@ -73,21 +88,6 @@ function eventListner() {
     });
   });
 }
-
-document && document.onload(event => {
-  document.body.innerHTML = `
-    <header class="headerInput">
-      <div class="form__group field">
-        <input type="input" class="form__field" placeholder="Name" name="name" id="search" required />
-        <label for="search" class="form__label">Search Here ...</label>
-      </div>
-    </header>
-    <section id="appedHtmlHere" style="padding: 3rem;" class="card-list">
-
-    </section>
-  `;
-  loadPosts(posts);
-});
 
 function loadData(post) {
   const { title, description, name, github, website, download } = post;

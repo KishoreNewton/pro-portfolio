@@ -17,7 +17,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
-      title: 'Output Management'
+      title: 'Output Management',
+      inject: false
     }),
     new MiniCssExtractPlugin({
       filename: 'bundle.css'
