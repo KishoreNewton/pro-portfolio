@@ -47,7 +47,7 @@ document.body.innerHTML = `
 
   </section>
 `;
-if(document.getElementById('loaded').id === 'loaded') {
+if (document.getElementById('loaded').id === 'loaded') {
   loadPosts(posts);
 }
 
