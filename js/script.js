@@ -36,17 +36,19 @@ const posts = [
   }
 ];
 
-document.body.innerHTML = `
+console.log(document.body);
+const bodyHtml = `
   <header class="headerInput" id="loaded">
-    <div class="form__group field">
-      <input type="input" class="form__field" placeholder="Name" name="name" id="search" required />
-      <label for="search" class="form__label">Search Here ...</label>
-    </div>
+  <div class="form__group field">
+    <input type="input" class="form__field" placeholder="Name" name="name" id="search" required />
+    <label for="search" class="form__label">Search Here ...</label>
+  </div>
   </header>
   <section id="appedHtmlHere" style="padding: 3rem;" class="card-list">
 
   </section>
 `;
+document.body.innerHTML = bodyHtml;
 loadPosts(posts);
 
 function loadPosts(posts) {
@@ -60,32 +62,33 @@ function mapPosts(posts) {
   posts.map(post => {
     const html = loadData(post);
     const node = document.getElementById('appedHtmlHere');
+    console.log(node);
     node.innerHTML += html;
   });
   eventListner();
 }
 
-function eventListner() {
-  document.querySelectorAll('.page').forEach(card => {
-    card.addEventListener('mouseenter', event => {
-      if (document.getElementById('search') === document.activeElement) {
-        return;
-      } else {
-        document.body.style.background = `#17141D`;
-        card.style.background = '#17141D';
-      }
-    });
-    card.addEventListener('mouseleave', event => {
-      if (document.getElementById('search') === document.activeElement) {
-        return;
-      } else {
-        changeStyle();
-        card.style.background = `#d0d0d0`;
-        card.querySelector('.half-circle').style.stroke = '#ff8a00';
-      }
-    });
-  });
-}
+// function eventListner() {
+//   document.querySelectorAll('.page').forEach(card => {
+//     card.addEventListener('mouseenter', event => {
+//       if (document.getElementById('search') === document.activeElement) {
+//         return;
+//       } else {
+//         document.body.style.background = `#17141D`;
+//         card.style.background = '#17141D';
+//       }
+//     });
+//     card.addEventListener('mouseleave', event => {
+//       if (document.getElementById('search') === document.activeElement) {
+//         return;
+//       } else {
+//         changeStyle();
+//         card.style.background = `#d0d0d0`;
+//         card.querySelector('.half-circle').style.stroke = '#ff8a00';
+//       }
+//     });
+//   });
+// }
 
 function loadData(post) {
   const { title, description, name, github, website, download } = post;
@@ -136,11 +139,11 @@ function loadData(post) {
 
 function changeStyle() {
   document.body.style.background = `linear-gradient(
-    90deg, 
+    90deg,
     #a6aaab,
     #b5b9ba,
     #c5c9ca,
-    #d4d8d9, 
+    #d4d8d9,
     #e4e8e9,
     #eef2f3,
     #f2f5f6,
@@ -173,122 +176,122 @@ function rainbowColors() {
   document.body.style.backgroundSize = `180% 180%`;
 }
 
-document.addEventListener('click', event => {
-  if (event.target.id === 'search' && event.target.value === '') {
-    rainbowColors();
-    if (window.innerWidth > 1300) {
-      document.querySelector('.form__label').innerText = 'Search For Project and resume';
-    }
-  } else if (
-    (event.target.className.includes && event.target.className.includes('page')) ||
-    (event.target.closest('.page') && event.target.closest('.page').className.includes('page'))
-  ) {
-    if (event.target.className === ('download' || 'website' || 'github')) {
-      return;
-    }
-    const card = event.target.className === 'page' ? event.target : event.target.closest('.page');
-    if (!card) return;
-    card.style.background = '#aea6fe';
-    document.body.style.background = '#ffd17e';
-    card.querySelector('.half-circle').style.stroke = '#ffd17e';
-  } else {
-    changeStyle();
-    document.getElementById('search').value = '';
-    document.getElementById('appedHtmlHere').innerHTML = '';
-    loadPosts(posts);
-    const cards = document.querySelectorAll('.page');
-    cards.forEach(card => {
-      card.style.background = ``;
-      card.style.animation = ``;
-    });
-    document.querySelector('.form__label').innerText = 'Search Here...';
-  }
-});
+// document.addEventListener('click', event => {
+//   if (event.target.id === 'search' && event.target.value === '') {
+//     rainbowColors();
+//     if (window.innerWidth > 1300) {
+//       document.querySelector('.form__label').innerText = 'Search For Project and resume';
+//     }
+//   } else if (
+//     (event.target.className.includes && event.target.className.includes('page')) ||
+//     (event.target.closest('.page') && event.target.closest('.page').className.includes('page'))
+//   ) {
+//     if (event.target.className === ('download' || 'website' || 'github')) {
+//       return;
+//     }
+//     const card = event.target.className === 'page' ? event.target : event.target.closest('.page');
+//     if (!card) return;
+//     card.style.background = '#aea6fe';
+//     document.body.style.background = '#ffd17e';
+//     card.querySelector('.half-circle').style.stroke = '#ffd17e';
+//   } else {
+//     changeStyle();
+//     document.getElementById('search').value = '';
+//     document.getElementById('appedHtmlHere').innerHTML = '';
+//     loadPosts(posts);
+//     const cards = document.querySelectorAll('.page');
+//     cards.forEach(card => {
+//       card.style.background = ``;
+//       card.style.animation = ``;
+//     });
+//     document.querySelector('.form__label').innerText = 'Search Here...';
+//   }
+// });
 
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape') {
-    document.getElementById('search').value = '';
-    document.getElementById('search').blur();
-    changeStyle();
-    document.getElementById('appedHtmlHere').innerHTML = '';
-    loadPosts(posts);
-    const cards = document.querySelectorAll('.page');
-    cards.forEach(card => {
-      card.style.background = ``;
-      card.style.animation = ``;
-    });
-  }
-});
+// document.addEventListener('keydown', event => {
+//   if (event.key === 'Escape') {
+//     document.getElementById('search').value = '';
+//     document.getElementById('search').blur();
+//     changeStyle();
+//     document.getElementById('appedHtmlHere').innerHTML = '';
+//     loadPosts(posts);
+//     const cards = document.querySelectorAll('.page');
+//     cards.forEach(card => {
+//       card.style.background = ``;
+//       card.style.animation = ``;
+//     });
+//   }
+// });
 
-document.getElementById('search').addEventListener('input', event => {
-  const input = event.target.value;
-  const filter = posts.filter(post => {
-    return post.title.includes(input) || post.keywords.includes(input) || post.description.includes(input);
-  });
+// document.getElementById('search').addEventListener('input', event => {
+//   const input = event.target.value;
+//   const filter = posts.filter(post => {
+//     return post.title.includes(input) || post.keywords.includes(input) || post.description.includes(input);
+//   });
 
-  if (input === '') {
-    document.getElementById('appedHtmlHere').innerHTML = '';
-    mapPosts(filter);
-    rainbowColors();
-    return;
-  }
+//   if (input === '') {
+//     document.getElementById('appedHtmlHere').innerHTML = '';
+//     mapPosts(filter);
+//     rainbowColors();
+//     return;
+//   }
 
-  if (filter.length === 0) {
-    document.body.style.background = `linear-gradient(
-      90deg,
-      #eef2f3,
-      #ffd9d1,
-      #ffb3a4,
-      #ee6350,
-      #cc3729,
-      #ba291c,
-      #a81810,
-      #970002,
-      #ff0004
-    )`;
-    document.body.style.animation = `rainbow 8s ease infinite`;
-    document.body.style.backgroundSize = `180% 180%`;
-    let style = document.createElement('style');
-    style.innerHTML = `
-      .card-list::-webkit-scrollbar-track { 
-        background: transparent;
-      }`;
-    document.head.appendChild(style);
-    document.getElementById('appedHtmlHere').innerHTML = '';
-  } else {
-    document.getElementById('appedHtmlHere').innerHTML = '';
-    mapPosts(filter);
-    eventListner();
-    document.body.style.background = `linear-gradient(
-      90deg,
-      #eef2f3,
-      #d5e1ef,
-      #abc4e0,
-      #7fa8d0,
-      #4d8dc1,
-      #2579b1,
-      #1d6ba2,
-      #145d93,
-      #0a5084
-    )`;
-    document.body.style.animation = `rainbow 8s ease infinite`;
-    document.body.style.backgroundSize = `180% 180%`;
-    let style = document.createElement('style');
-    style.innerHTML = `
-      .card-list::-webkit-scrollbar-track { 
-        background: linear-gradient(
-          90deg,
-          #eef2f3,
-          #d5e1ef,
-          #abc4e0,
-          #7fa8d0,
-          #4d8dc1,
-          #2579b1,
-          #1d6ba2,
-          #145d93,
-          #0a5084
-        );
-      }`;
-    document.head.appendChild(style);
-  }
-});
+//   if (filter.length === 0) {
+//     document.body.style.background = `linear-gradient(
+//       90deg,
+//       #eef2f3,
+//       #ffd9d1,
+//       #ffb3a4,
+//       #ee6350,
+//       #cc3729,
+//       #ba291c,
+//       #a81810,
+//       #970002,
+//       #ff0004
+//     )`;
+//     document.body.style.animation = `rainbow 8s ease infinite`;
+//     document.body.style.backgroundSize = `180% 180%`;
+//     let style = document.createElement('style');
+//     style.innerHTML = `
+//       .card-list::-webkit-scrollbar-track {
+//         background: transparent;
+//       }`;
+//     document.head.appendChild(style);
+//     document.getElementById('appedHtmlHere').innerHTML = '';
+//   } else {
+//     document.getElementById('appedHtmlHere').innerHTML = '';
+//     mapPosts(filter);
+//     eventListner();
+//     document.body.style.background = `linear-gradient(
+//       90deg,
+//       #eef2f3,
+//       #d5e1ef,
+//       #abc4e0,
+//       #7fa8d0,
+//       #4d8dc1,
+//       #2579b1,
+//       #1d6ba2,
+//       #145d93,
+//       #0a5084
+//     )`;
+//     document.body.style.animation = `rainbow 8s ease infinite`;
+//     document.body.style.backgroundSize = `180% 180%`;
+//     let style = document.createElement('style');
+//     style.innerHTML = `
+//       .card-list::-webkit-scrollbar-track {
+//         background: linear-gradient(
+//           90deg,
+//           #eef2f3,
+//           #d5e1ef,
+//           #abc4e0,
+//           #7fa8d0,
+//           #4d8dc1,
+//           #2579b1,
+//           #1d6ba2,
+//           #145d93,
+//           #0a5084
+//         );
+//       }`;
+//     document.head.appendChild(style);
+//   }
+// });
