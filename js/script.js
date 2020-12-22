@@ -47,9 +47,7 @@ document.body.innerHTML = `
 
   </section>
 `;
-if (document.getElementById('loaded').id === 'loaded') {
-  loadPosts(posts);
-}
+loadPosts(posts);
 
 function loadPosts(posts) {
   let style = document.createElement('style');
