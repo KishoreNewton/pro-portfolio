@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 :root {
-  --body-font: 'Mulish', sans-serif;
-  --title-font: 'Poppins', sans-serif;
   --type-font: 'Varela Round', sans-serif;
 }
 
