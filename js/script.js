@@ -24,7 +24,7 @@ const posts = [
     name: 'Kishore Newton',
     github: 'https://github.com/KishoreNewton/instagram-react',
     website: 'https://instagram.kishorenewton.com/',
-    download: '',
+    download: 'https://kishorenewton.com/portfolio/boards.zip',
     keywords: 'react, instagram, clone, website, graphql, javascript, social media'
   },
   {
@@ -113,22 +113,22 @@ function loadData(post) {
     </div>
   </div>
   <div class="links">
-    <a href="${github}" target='_blank' rel="noreferrer">
-      <svg class="github" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
+    <a href="${github}" class="github" aria-label="github link" target='_blank' rel="noreferrer">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
         height="20" viewBox="0 0 100 100">
         <image alt="github" width="100" height="98"
           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABiCAYAAACmu3ZJAAADIklEQVR4nO2dC47DIAxEk2rvf+WstFJaNs0Hg8cMMO8AKfaLgRBC123bFmIQjVuZA/4haENKxN1x9hs0khiEMJRo2oamcloKYe0r93Y1EdNCCPWgldBETKSQXkQcCRUTIaRXEUdCxCCFjCLiCFTMC3HRgWWkQGL0rpAZRKS4V4tnhcwmI8Utdi8hM8vYccmBhxDJ+FCdi1ohkvFNVU5qhEjGNcW5KRUiGc8U5ahEiGTkY86VVYhk2DHlzCJEMsrJzl2uEMmoJyuHqLUsUUjOWlZtdaTrPL1WmlcM29O615MQ7wT2JAf13uNWCrrLugtqJd2S89QuaJvvhETdwSxiIttxmVumfVl7Mq4aW5ss1HVduRLSsn9HJYitezwdSzTtJeNMiB4C4/jKtSqEjKMQVUc8/3KuCiEjFaLqaMc79+gKGVEyNCZ1WWTsQlDWqT8fKwS56AitkBFl7MBiQwkZWcZOV7vfRSEIITNUx457rC89f1Cxqcsiw1vITN3VjmvMqhAyJIQMCSFDQsiQEDIkhAwJIUNCyJAQMiSEDAkhQ0LI8BYy41K+a8yqEDIkhAyEkJm6LfdYVSFkSAgX6wv02lWHYBaCrJCRpcBiU5dFhj5HsBPyOQJy+85IUpCx/DmIOjig6V9AOBB2U0WPIT1WS2ibUyGR53z0ICayne/cM/zDDuORF804ClkNDfI81OvsmpHQnO1SUyHp4SlPJ/lYrnmGlyj6rvJsULcEfwyQ9VAyViCnAfUySHfBlZDau9yzSlivVctpW5B/6OIRPCKB1F3qnZCShiOkjEizU0mFkSchLasEWV0tK/f2t3MqxGssUPeVkQPU0snV6c13T/fTC1sMQixLKrnMJiArXsugbk2gHhY/ZOfOOsuSFDumnJVMe0ukzCrG3C2XPoeUTodz5IwisGiMrJll1Qz0o1dM8YSl9kldU9VvqnLisXQiKR+qc+G1liUpTjnwXFycWYpb7N5LJ17v1nsBcuYiAh0TWwhyX9ao1QK92SI2yo0iJqTqI3cu9iomtPttsZW0FzFNxsGW79Tv3iJGJOPut9tMSpZl+QU4AHr0YhYW7AAAAABJRU5ErkJggg==" />
       </svg>
     </a>
-    <a href="${download}" download target='_blank' rel="noreferrer">
-      <svg class="download" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
+    <a href="${download}" class="download" aria-label="download link" download target='_blank' rel="noreferrer">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
         height="20" viewBox="0 0 100 100">
         <image alt="download" width="100" height="100"
           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAABdklEQVR4nO3cW27CQBAAQRPl/ld2pHwgRXnBmjVtXHUAhNLMhgHjy7qu68KjXUYf702KKYZf5ILMMxRFkLnujiLIfHdFEWQfN0cRZD83RRFkX/9GEWR/f0Z5n/R0hhejgxndN9bf/kYm5Hl+jCnIc32LMuvIOoKR42bGUfzl+DIhDdcXhyAdn1EEaVkFiREkRpAYQWIEiREkRpAYQWIEiREkRpAYQWIEiREkRpAYQWIEiREk5sxXnSQv5jMhMYLEzDqy/JB0kAmJESRGkBhBYgSJESRGkBhBYgSJESRGkBhBYgSJESRGkBhBYgSJGf3G8Cx3+9nKPRePTpAYQWIEiREkRpCYGRfKne0iuYeuACYkRpAYQWIEiZnxT93nXBuYkBhBYuwh29lDXpkgMYLECBJjD4kxITGCxAgSYzHczmL4ygSJESRGkBiLYYwJiREkRpAYQWIEiREkZvRtr7uOTmJCYgSJESRGkBhBYgSJESRGkJJlWT4Ak4Mb0qa40cEAAAAASUVORK5CYII=" />
       </svg>
     </a>
-    <a href="${website}" target='_blank' rel="noreferrer">
-      <svg class="website" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
+    <a href="${website}" class="website" aria-label="Visit Website" target='_blank' rel="noreferrer">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
         height="20" viewBox="0 0 100 100">
         <image alt="website" width="100" height="100"
           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAEJUlEQVR4nO1dYXPsIAhM3tz//8t5M22vk+aSiLCLq3G/9aZnkBVQgty6bdsiDJZwq+qUXwIy7JG1Oo7PkSFIgRAFE93L0JScloSo+sq3XE2IaUGIdNDaoQkxmYT0QsQRqcRkENIrEUekEMMkZBQijqAS848x6MBk7EGZI9pCFIg4W7ksueDWgiRElYyzz9GybihSUC4LOUHPxNbK762O75QA0QGCEBQZbwXVjqeUlwrrIuqyEGTsFWodz0rC3Xge8q3PdC+SCCEZZERWf0k+Zsxzk+J1WewAHvXvaglLMzwWgowZd397oXQGqraUWgthkYGC4oG0SqYaQtRP38rymWWzuqzoZBkWYT0le3ZxDJjcFyuXtQeTDOtztl7yaxZCPBNhnIQt8sgWL/ygqMsSIV4yWPCcLdQs41YedLa3xQodKtV/ZyGKOSWWG8zGpW5RQT1bSSOQcoorQmqsY7opH07nkLHtZeBRFqJuHWi859AiPn3oWq229woZLup48m/iFo+E9Gwd3vfmx//LJuJPSsUbQ9TJuPpMHntCety5lPy+tQqlNX5174khvay80h0Q1jv1EHoJ6lfKixZFrCfBvGZcON6EjPjyyWrJKhb/Fdxrg3pPp/Ls70Gg7rKiyjm+pUOXGsHRSwyJoPSql2kR1YfMF6FaEAFWRSEDFr2Yd3RPvRaNBNINbkrZ3idc8imi1/T7sFAplHuCdZjcmIKFqJORui2eLquM1GKPVsXWe/SQrEyTcVqIDdZrBWHiZgyxoyRns1u487zwCZhLmy4LA1h1veodw8ciYiGTFAKmy8JBorUG+q764zEtRAyTEAyktr1Pd1uIviu/UGrP9PhYsoBd1hNJgcv7ApdUIjqrWarYVZoBoLEyihxg7e5+oNqpoWaOZrlG60qa5fJoz2Fue1uQ0r37mueQetRah6s909xy2sDU09fYo1mI7M0oK0Z0WV1b+54Q9ERaKqbbA+YM6jy4dnxHQmZwv4f37vsd/uh8ZAvp/p76G6NYSatDYqgbxqgW0uq2VPi5V4TMWPKJlF0oI9s7IpmWOdEL5aaVfINBxuWYo8aQbm8MlwjxTEwlBY4ghRHEb8e0WEjPpESQTsYy4AuqI7xWQt/eXsFKiPsifEy8JmCRAb+F+yRSrkAlY3G4rB5JqZH5rkENnYzFGUMipKhay13vxojM1bpat839PMVf3bnDXt6Mk7drfhFClg5JsaLZvKK5rGgZqvV3pDKAcqehuSCSi4ja4Fp3ggQyroVlR2V70QXb+3EZkG0Rgky/MxoTl5ohe8dBA7ZwWL9BxVKA2rYZbsGsXNYT3qVQ5shsgtn0dziIoC62jK6koxCTYvWZbWJ7JSbV/bbo29sLMU3iYMtGyqrENN2QKHS2VrhRK7MrVGs1fqYYNEm6W/JlWf4D8YfJEGzU5vkAAAAASUVORK5CYII=" />

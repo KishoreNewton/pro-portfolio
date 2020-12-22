@@ -17,6 +17,14 @@ body {
   font-family: 'DM Mono', monospace;
 }
 
+p {
+  color: #000;
+}
+
+.page:hover p {
+  color: whitesmoke;
+}
+
 @-webkit-keyframes rainbow {
   0% {
     background-position: 0% 82%;
@@ -170,6 +178,34 @@ body {
   background: linear-gradient(90deg, #ddd6f3, #ececec, #c7c7c7, #9b9b9b, #ffe7e7, #ffe7e7, #fcd4d4, #eeb3b0, #faaca8);
 }
 
+.github,
+.download,
+.website {
+  filter: brightness(0) saturate(100%);
+}
+
+.page:hover .github,
+.page:hover .download,
+.page:hover .website {
+  filter: none;
+}
+
+.author-name {
+  background: linear-gradient(90deg, #000000, #7a7a8c);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page:hover .author-name {
+  background: linear-gradient(90deg, #ffffff, #7a7a8c);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .page {
   margin-top: 50px;
   display: flex;
@@ -238,11 +274,27 @@ body {
 .author-name-prefix {
   font-style: normal;
   font-weight: 700;
-  color: #7a7a8c;
+  color: #181818;
 }
 
-.card-header h2:hover {
+.page:hover h2:hover {
   background: linear-gradient(90deg, #ff8a00, #e52ee5);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-header h2 {
+  background: linear-gradient(90deg, #000000, #7a7a8c);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page:hover h2 {
+  background: linear-gradient(90deg, #ffffff, #868697);
   text-shadow: none;
   background-clip: text;
   -webkit-background-clip: text;
