@@ -125,16 +125,16 @@ function loadData(post) {
 
 function changeStyle() {
   document.body.style.background = `linear-gradient(
-    90deg,
-    #d8d8d8,
-    #b4b4b4,
-    #c7c7c7, 
-    #9b9b9b, 
-    #7c7c7c, 
-    #c5c5c5, 
-    #797979, 
-    #b4b4b4, 
-    #9b9b9b
+    90deg, 
+    #a6aaab,
+    #b5b9ba,
+    #c5c9ca,
+    #d4d8d9, 
+    #e4e8e9,
+    #eef2f3,
+    #f2f5f6,
+    #b5b9ba,
+    #a6aaab
   )`;
   document.body.style.animation = `rainbow 8s ease infinite`;
   document.body.style.backgroundSize = `180% 180%`;
