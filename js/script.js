@@ -74,7 +74,20 @@ function eventListner() {
   });
 }
 
-loadPosts(posts);
+document && document.onload(event => {
+  document.body.innerHTML = `
+    <header class="headerInput">
+      <div class="form__group field">
+        <input type="input" class="form__field" placeholder="Name" name="name" id="search" required />
+        <label for="search" class="form__label">Search Here ...</label>
+      </div>
+    </header>
+    <section id="appedHtmlHere" style="padding: 3rem;" class="card-list">
+
+    </section>
+  `;
+  loadPosts(posts);
+});
 
 function loadData(post) {
   const { title, description, name, github, website, download } = post;
