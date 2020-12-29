@@ -1,6 +1,6 @@
 import '../css/main.css';
 
-let bodyDiv = document.createElement('div')
+let bodyDiv = document.createElement('div');
 const bodyHtml = `
   <header class="headerInput" id="loaded">
   <div class="form__group field">
@@ -12,7 +12,7 @@ const bodyHtml = `
 
   </section>
 `;
-bodyDiv.innerHTML = bodyHtml
+bodyDiv.innerHTML = bodyHtml;
 document.getElementsByTagName('body')[0].appendChild(bodyDiv);
 
 const posts = [
@@ -26,6 +26,17 @@ const posts = [
     website: 'https://instagram.kishorenewton.com/',
     download: 'https://kishorenewton.com/portfolio/boards.zip',
     keywords: 'react, instagram, clone, website, graphql, javascript, social media'
+  },
+  {
+    id: '2',
+    title: 'Instagram (OLD)',
+    description: 'Node ts React GraphQL',
+    date: '11-11-2018',
+    name: 'Kishore Newton',
+    github: 'https://github.com/KishoreNewton/instagramReact-node-backend',
+    website: 'https://kishorenewton.com/depricated.html',
+    download: 'https://kishorenewton.com/portfolio/boards.zip',
+    keywords: 'react, instagram, clone, website, graphql, javascript, social media, node, typescript, js, ts'
   },
   {
     id: '2',
@@ -46,8 +57,63 @@ const posts = [
     name: 'Kishore Newton',
     github: 'https://github.com/KishoreNewton/newcolors',
     website: 'https://instagram.kishorenewton.com/',
-    download: 'https://www.kishorenewton.com/portfolio/react-uicolors.zip',
+    download: 'https://www.kishorenewton.com/fixlater',
     keywords: 'react, colors, frontend, website, javascript, selector'
+  },
+  {
+    id: '4',
+    title: 'Codepen clone',
+    description: 'React',
+    date: '05-03-2019',
+    name: 'Kishore Newton',
+    github: 'https://github.com/KishoreNewton/codepen-react',
+    website: 'https://codepen.kishorenewton.com/',
+    download: 'https://www.kishorenewton.com/fixlater',
+    keywords: 'react, codepen, frontend, website, js, javascript, redux, selector'
+  },
+  {
+    id: '5',
+    title: 'Spotify clone',
+    description: 'Electron PhP Js MySQL',
+    date: '05-03-2019',
+    name: 'Kishore Newton',
+    github: 'https://github.com/KishoreNewton/spotify-clone-electron',
+    website: 'https://www.kishorenewton.com/portfolio/music/register.php/',
+    download: 'https://www.kishorenewton.com/fixlater',
+    keywords: 'react, music, electron, website, js, javascript, PhP'
+  },
+  {
+    id: '6',
+    title: 'Translator',
+    description: 'PhP MySQL AutoML',
+    date: '10-07-2019',
+    name: 'Kishore Newton',
+    github: 'https://github.com/KishoreNewton/translator',
+    website: 'https://www.kishorenewton.com/portfolio/translator/',
+    download: 'https://www.kishorenewton.com/fixlater',
+    keywords: 'html, css, vanilla js, translator, AutoML, MySQL, javascript, PhP, '
+  },
+  {
+    id: '7',
+    title: 'Search Engine',
+    description: 'PhP PostgreSQL',
+    date: '05-03-2019',
+    name: 'Kishore Newton',
+    github: 'https://github.com/KishoreNewton/search-engine-php',
+    website: 'https://kishorenewton.com/portfolio/search/searchengine/',
+    download: 'https://www.kishorenewton.com/fixlater',
+    keywords: 'Search Engine, PhP, PostgreSQL, SQL, google, find, finda-z'
+  },
+  {
+    id: '8',
+    title: 'Microservice Ticketing',
+    description: 'Node MongoDB ts docker Kubernetes ecs',
+    date: '17-05-2020',
+    name: 'Kishore Newton',
+    github: 'https://github.com/KishoreNewton/ticketing',
+    website: 'https://github.com/KishoreNewton/ticketing',
+    download: 'https://www.kishorenewton.com/fixlater',
+    keywords: 'Microservice, ticketing, ecommerce, undeployed'
   }
 ];
 
@@ -192,9 +258,9 @@ document.addEventListener('click', event => {
     }
     const card = event.target.className === 'page' ? event.target : event.target.closest('.page');
     if (!card) return;
-    card.style.background = '#aea6fe';
-    document.body.style.background = '#ffd17e';
-    card.querySelector('.half-circle').style.stroke = '#ffd17e';
+    card.style.background = '#00554a';
+    document.body.style.background = '#00554a';
+    card.querySelector('.half-circle').style.stroke = '#a3d0c8';
   } else {
     changeStyle();
     document.getElementById('search').value = '';
