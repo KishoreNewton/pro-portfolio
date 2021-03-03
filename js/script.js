@@ -34,7 +34,7 @@ const posts = [
     date: '11-11-2018',
     name: 'Kishore Newton',
     github: 'https://github.com/KishoreNewton/instagramReact-node-backend',
-    website: 'https://kishorenewton.com/depricated.html',
+    website: 'https://kishorenewton.com/deprecated.html',
     download: '#',
     keywords: 'react, instagram, clone, website, graphql, javascript, social media, node, typescript, js, ts'
   },
@@ -111,7 +111,7 @@ const posts = [
     date: '17-05-2020',
     name: 'Kishore Newton',
     github: 'https://github.com/KishoreNewton/ticketing',
-    website: 'https://github.com/KishoreNewton/ticketing',
+    website: 'https://kishorenewton.com/undeployed.html',
     download: 'https://www.kishorenewton.com/fixlater',
     keywords: 'Microservice, ticketing, ecommerce, undeployed'
   }
