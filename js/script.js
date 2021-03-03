@@ -84,7 +84,7 @@ const posts = [
   },
   {
     id: '6',
-    title: 'Translator',
+    title: 'Translator ML',
     description: 'PhP MySQL AutoML',
     date: '10-07-2019',
     name: 'Kishore Newton',
