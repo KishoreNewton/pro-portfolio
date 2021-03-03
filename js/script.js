@@ -35,7 +35,7 @@ const posts = [
     name: 'Kishore Newton',
     github: 'https://github.com/KishoreNewton/instagramReact-node-backend',
     website: 'https://kishorenewton.com/depricated.html',
-    download: 'https://kishorenewton.com/portfolio/boards.zip',
+    download: '#',
     keywords: 'react, instagram, clone, website, graphql, javascript, social media, node, typescript, js, ts'
   },
   {
@@ -56,7 +56,7 @@ const posts = [
     date: '05-03-2019',
     name: 'Kishore Newton',
     github: 'https://github.com/KishoreNewton/newcolors',
-    website: 'https://instagram.kishorenewton.com/',
+    website: 'https://www.kishorenewton.com/portfolio/MultiFormatColorSelector/',
     download: 'https://www.kishorenewton.com/fixlater',
     keywords: 'react, colors, frontend, website, javascript, selector'
   },
@@ -67,8 +67,8 @@ const posts = [
     date: '05-03-2019',
     name: 'Kishore Newton',
     github: 'https://github.com/KishoreNewton/codepen-react',
-    website: 'https://codepen.kishorenewton.com/',
-    download: 'https://www.kishorenewton.com/fixlater',
+    website: '#',
+    download: '#',
     keywords: 'react, codepen, frontend, website, js, javascript, redux, selector'
   },
   {
